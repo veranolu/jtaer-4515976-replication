@@ -1,7 +1,7 @@
 # Anonymous Replication Package — jtaer-4515976 (VR28 audit core)
 
 Minimal anonymized package for reproducing the key derived numbers audited in the
-VR28 verification round (2026-09-06). Package only; no external upload.
+VR28 verification round (2026-09-06). 
 
 ## Contents
 
