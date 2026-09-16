@@ -9,7 +9,24 @@ VR28 verification round (2026-09-06).
 data/
   user_level_6vars_anonymized_87105.csv   # 87,105 rows, one per consumer
 scripts/
-  recalc/   # independent recalculation paths (VR23 round)
+  recalc/
+    recalc_A.py                              # headline observational quantities (2.925% overlap; 342 shared-item pairs; 50.5% incidence = 5,911/11,694)
+  vr37/
+    vr37_qw2_mc_pvalue_20260907.py           # Monte Carlo verification of analytic finite-draw expectations
+    vr37b_s12_lopo_support_and_agent_cluster_bootstrap_20260908.py  # LOPO support ratios (101,577 pairs; median 0.905); agent-cluster bootstrap
+  vr40/
+    vr40_rq2_r041_bootstrap_ci_20260908.py   # consumer-level bootstrap CIs for RQ2 ratio statistics (1,000 replications)
+    vr41_s9_sparsity_and_shelf_inflation_robustness_20260908.py     # sparsity / shelf-inflation robustness
+  vr28/
+    vr28b_mc_lopo_20260906.py                # Monte Carlo LOPO overlap benchmarks (2.095% / 3.194%)
+  figures/
+    figure1_redraw_final.py                  # Figure 1 (research-design roadmap)
+    figure2_redraw_final/VR51.py             # Figure 2 (relational-concentration panels)
+Note: figure3_redraw_final.py, figure4_*.py and figure5_redraw_final/VR51.py
+correspond to earlier manuscript versions (round-1 figure set). The current
+manuscript has three main-text figures (Figures 1–3); the conceptual framework
+figure (Figure 3) was redrawn for the current version and is not script-generated.
+recalc/   # independent recalculation paths (VR23 round)
     recalc_RQ1.py   recalc_A.py   recalc_A2.py   recalc_B.py   recalc_S7.py
   vr28/     # VR28 round-1 + round-2 audit scripts
     vr28_audit_script.py  vr28_pairs_script.py  vr28_consumers_gge2.py
